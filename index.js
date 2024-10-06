@@ -4,7 +4,12 @@ let cors = require('cors');
 let app = express();
 const port = 3000;
 
-app.use(cors());
+const corsOptions = {
+  origin: *
+};
+
+app.use(cors(corsOptions));
+
 
 // 1 - Calculate total price of items in the cart
 function calculateCartTotal(newItemPrice, cartTotal) {
